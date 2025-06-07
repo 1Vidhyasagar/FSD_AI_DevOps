@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 8 – Product Card Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    input {
+      margin: 5px;
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+      margin: 5px;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      width: 250px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🛒 Product Card Maker</h2>
+
+  <input type="text" id="nameInput" placeholder="Product Name" />
+  <input type="text" id="priceInput" placeholder="Price" />
+  <input type="text" id="imageInput" placeholder="Image URL" />
+  <input type="color" id="bgColor" />
+  <button onclick="createCard()">Add Product</button>
+
+  <div id="cardContainer"></div>
+<script src="day8_productCard_script.js"></script>
+</body>
+</html>

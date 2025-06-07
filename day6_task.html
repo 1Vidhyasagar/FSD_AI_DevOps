@@ -1,0 +1,43 @@
+<!-- 🎮 Practice Tasks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ✅ Task 1: Alert on Button Click -->
+<button id="helloBtn">Say Hello</button>
+
+<!-- ✅ Task 2: Change Text When Button Clicked -->
+
+<p id="message">I will change!</p>
+<button id="changeTextBtn">Change Text</button>
+
+<!-- ✅ Task 3: Form Submission (prevent reload) -->
+
+<form id="loginForm">
+    <input type="text" placeholder="Username">
+    <input type="submit" value="Login">
+  </form>
+
+<script>
+    document.getElementById("helloBtn").addEventListener("click", function () {
+      alert("Hello, Sagar!");
+    });
+
+
+    document.getElementById("changeTextBtn").addEventListener("click", function () {
+    document.getElementById("message").innerText = "Boom! Changed!";
+  });
+
+  document.getElementById("loginForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stops the page from reloading
+    alert("Form Submitted!");
+  });
+
+  </script>
+</body>
+</html>

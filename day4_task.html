@@ -1,0 +1,40 @@
+<!-- ________________________________________
+🤹🏻‍♂‍ Your Task
+Create an HTML page with:
+✅ A heading and paragraph
+✅ A button that changes heading text
+✅ A button that changes the background color
+✅ An image and a button to change the image
+✅ Add some styles using inline or <style> tag -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Task</title>
+        <style>
+            body{
+                background-color:azure;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <p>This is a task</p>
+        <button  onclick="changeBg()">Change bg color</button>
+        <img src="myphoto.jpg" id="photo" alt="my photo" width="200">
+        <button onclick="changeImg()">Change image</button> 
+
+        <script>
+            function changeBg(){
+                document.body.style.backgroundColor="grey"
+            }
+
+            function changeImg(){
+                document.getElementById("photo").src="pic2.jpg"
+            }
+        </script>
+    </body>
+    </html>
